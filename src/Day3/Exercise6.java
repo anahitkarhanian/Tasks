@@ -12,7 +12,5 @@ public class Exercise6 {
         String name = String.valueOf(a);
         name = name + n + " " + birthYear;
         System.out.println(name);
-
-
     }
 }
