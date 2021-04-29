@@ -18,7 +18,5 @@ public class circle {
         } else {
             System.out.println("Please input 1 or 2");
         }
-
-
     }
 }
