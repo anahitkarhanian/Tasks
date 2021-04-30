@@ -8,21 +8,16 @@ public class exercise15 {
         int num1 = scanner.nextInt();
         int num2 = scanner.nextInt();
         int num3 = scanner.nextInt();
-        int count = 1;
+        int count = 0;
         if (num1 == num2){
-            count++;
+            count += 2;
             if (num1 == num3){
                 count++;
             }
         } else if (num1 == num3){
-            count++;
-            if (num1 == num2){
-                count++;
-            }
-        } else {
-            if (num2 == num3){
-                count++;
-            }
+            count += 2;
+        } else if (num2 == num3){
+            count += 2;
         }
         System.out.println(count);
     }

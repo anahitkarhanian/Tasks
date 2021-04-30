@@ -9,7 +9,7 @@ public class exercise14 {
         int edge2 = scanner.nextInt();
         int edge3 = scanner.nextInt();
         if (edge1 > 0 && edge2 > 0 && edge3 > 0) {
-            if ((edge1 + edge2 > edge3) || (edge2 + edge3 > edge1) || (edge1 + edge3 > edge2)) {
+            if ((edge1 + edge2 > edge3) && (edge2 + edge3 > edge1) && (edge1 + edge3 > edge2)) {
                 System.out.println("True");
             } else{
                 System.out.println("false");
