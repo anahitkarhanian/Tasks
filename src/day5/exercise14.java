@@ -12,21 +12,27 @@ public class exercise14 {
         System.out.print("Final score:");
         int finalScore = scanner.nextInt();
         double average = (quiz + midTerm + finalScore) / 3;
-        switch ((int) average / 20){
-            case 4: {
+        switch ((int) (average + 20) / 20){
+            case 5:
+            case 6: {
                 System.out.println("your grade is A");
                 break;
             }
-            case 3: {
+            case 4: {
                 System.out.println("your grade is B");
                 break;
             }
-            case 2: {
+            case 3: {
                 System.out.println("your grade is C");
                 break;
             }
-            default: {
+            case 2:
+            case 1: {
                 System.out.println("your grade is F");
+                break;
+            }
+            default: {
+                System.out.println("enter positive numbers");
                 break;
             }
         }
